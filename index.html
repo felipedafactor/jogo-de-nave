@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Attack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <div class="hud">
+            <div>🚀 PONTOS: <span id="score">0</span></div>
+            <div>❤️ VIDAS: <span id="lives">3</span></div>
+            <div>⭐ NÍVEL: <span id="level">1</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="startScreen" class="screen">
+            <h1>🚀 SPACE ATTACK</h1>
+
+            <p>Destrua as naves inimigas!</p>
+
+            <div class="controls">
+                <p>⬅️ ➡️ Mover</p>
+                <p>🔫 ESPAÇO para atirar</p>
+            </div>
+
+            <button id="startButton">COMEÇAR</button>
+        </div>
+
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>💥 GAME OVER</h1>
+
+            <p>Pontuação: <strong id="finalScore">0</strong></p>
+            <p>Nível alcançado: <strong id="finalLevel">1</strong></p>
+
+            <button id="restartButton">JOGAR NOVAMENTE</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
